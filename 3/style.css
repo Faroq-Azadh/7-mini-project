@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background: rgb(63,94,251);
+  background: linear-gradient(166deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+.title{
+  margin-top: 30px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 15px white;
+  font-family: 'Roboto Mono', sans-serif;
+  animation: title infinite;
+  animation-duration: 3s;
+}
+
+@keyframes title {
+  0%{transform: translateY(0px);}
+  50%{transform: translateY(20px);}
+  100%{transform: translateY(0px);}
+}
+
+.main {
+  color: #fff;
+  font-family: 'Roboto Mono', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.bi-twitter , .bi-youtube , .bi-facebook{
+  margin: 0 auto;
+  margin-top: -120px;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 50px;
+}
+
+.counter {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+.footer{
+  color: #fff;
+  font-family: 'Roboto Mono', sans-serif;
+  margin-top: -130px;
+  padding-bottom: 100px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  animation: footer infinite;
+  animation-duration: 3s;
+}
+
+@keyframes footer {
+  0%{transform: scale(0.99);}
+  50%{transform: scale(1.2);}
+  100%{transform: scale(0.99));}
+}
+
+@media (max-width: 680px) {
+  .main {
+    flex-direction: column;
+  }
+}
