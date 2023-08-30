@@ -55,10 +55,24 @@ body{
     }
   }
 
-  @media screen and (Max-width : 687px) {
+  @media screen and (Max-width : 730px) {
     body{
         background-image:none;
         background-color: black;
+    }
+
+    .container {
+      width: 90%;
+      height: 90%;
+    }
+
+    canvas {
+      width: 105%;
+      height: 105%;
+    }
+
+    .toolbox{
+      width: 101%;
     }
   }
 
